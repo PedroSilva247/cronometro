@@ -24,10 +24,13 @@ function play() {
         document.querySelector("main#time1").innerText = toMinutes(timeInSeconds)
         if(timeInSeconds == 1149 || timeInSeconds < 1) {
             i()
+            
         } else {
             g()
         }
-        
+        if (timeInSeconds < 1) {
+            playMusic()
+        }
 
     }, 1000)
 }
@@ -46,4 +49,7 @@ function g() {
     container.style.backgroundColor = "#0e95dd"
     sec.className = "gremio"
     titulo.innerHTML = "Cronômetro"
+}
+function playMusic() {
+    document.getElementById("audio").play();
 }
