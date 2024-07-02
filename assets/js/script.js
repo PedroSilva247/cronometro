@@ -29,7 +29,7 @@ function play() {
         }
         
 
-    }, 10)
+    }, 1000)
 }
 
 let sec = document.getElementById("sec")
