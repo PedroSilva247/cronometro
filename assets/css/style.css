@@ -1,0 +1,91 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.inter div * {
+    color: #fff;
+    border-color: #fff;
+}
+.inter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(..//images/inter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+.inter div .div-button :hover {
+    background-color: #fff;
+    color: #E5050F;
+}
+
+.gremio div * {
+    color: #042f46;
+    border-color: #042f46;
+}
+.gremio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(..//images/gremio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: 150%;
+}
+.container {
+    background-color: #0e95dd;
+    width: 700px; height: 400px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header.title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #042f46;
+    font-size: 22px;
+}
+.time {
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: #042f46;
+    
+}
+.div-button {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #042f46;
+    font-size: 21px;
+    cursor: pointer;
+    background: none;
+    transition-duration: 200ms;
+}
+.div-button :hover {
+    background-color: #042f46;
+    color: #0e95dd;
+}
